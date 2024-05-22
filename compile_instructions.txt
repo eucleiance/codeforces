@@ -1,0 +1,7 @@
+Step 1:
+g++ -o hello_world hello_world.cpp
+g++ -o compiled_file file_to_compile.cpp
+
+Step 2:
+./hello_world
+./compiled_file 
