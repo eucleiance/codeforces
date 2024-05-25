@@ -30,41 +30,10 @@ int main()
   return 0;
 }
 
-
 // 3 -> Teams
 // 1 2  -> Team 1 -> Home + Away
 // 2 4  -> Team 2 -> Home + Away
 // 3 4  -> Team 3 -> Home + Away
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // 2D Vector
 // int main()
