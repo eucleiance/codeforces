@@ -1,41 +1,35 @@
-#include <iostream>
-#include <algorithm>
+#include<iostream>
+#include<algorithm>
 using namespace std;
-int main()
-{
-  int cS, n;
-  cin >> cS >> n;
-  int eS[n];
-  int pG[n];
-  for (int i = 0; i < n; i++)
-  {
-    cin >> eS[i];
-    cin >> pG[i];
-  }
-  
-  for (int i = 0; i < n; i++)
-  {
-    if (cS > eS[i]){
-      // huh 
-    }
-  }
 
-  for (int i = 0; i < n; i++)
-  {
-    cout << eS[i] << endl;
-    cout << pG[i] << endl;
+int main() {
+  long int characterS, dCount, dStrength, gPoints;
+  pair<int, int> dragon[1000];
+
+  while (cin >> characterS >> dCount) {
+    int can_defeat = 1;
+    for (int i = 0; i < dCount; i++) {
+      cin >> dragon[i].first >> dragon[i].second;
+    }
+    sort(dragon, dragon + dCount);
+    for (int i = 0; i < dCount; i++) {
+      if (characterS <= dragon[i].first) {
+        can_defeat = 0;
+        break;
+      } else {
+        characterS += dragon[i].second;
+      }
+    }
+    if (can_defeat == 0)
+    {
+      cout << "NO\n";
+      return 0;
+    }
+    else
+    {
+      cout << "YES\n";
+      return 0;
+    }
   }
   return 0;
 }
-
-
-
-
-// 2 2
-// 1 99
-// 100 0
-
-
-// C Strength -> Num of lines
-// E Strength -> Power gained by defeating Enemy
-// 2nd E Strength -> Power gained by defeating Enemy
