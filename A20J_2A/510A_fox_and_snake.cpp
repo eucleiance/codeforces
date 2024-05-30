@@ -20,7 +20,7 @@ int main()
           cout << '.';
         }
         cout << endl;
-        isR = false;
+        isR = true;
       }
     } else {
       for (int j = 1; j <= l; j++){
